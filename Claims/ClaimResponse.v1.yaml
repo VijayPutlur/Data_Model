@@ -1,0 +1,68 @@
+title: ClaimResponse.v1
+type: object
+x-examples:
+  ClaimResponse:
+    id: 0
+    claimId: 0
+    status: string
+    PolicyDetails:
+      policyId: 1
+      policyName: Health
+      Product:
+        productId: 1
+        productName: Credit Card
+        productDescription: This is for credit card
+      Preference:
+        id: '123'
+        details: Its user preference
+      Address:
+        addressId: 0
+        address1: Electronic
+        street: city
+        city: Bangalore
+        state: Karnataka
+        country: India
+        zip: '560000'
+        Contact:
+          mobile: 9999999999
+          emailId: Messi@gmail.com
+          phoneNumber: 9999999999
+  ClaimResponse Schema:
+    id: 0
+    claimId: 0
+    status: string
+    PolicyDetails:
+      policyId: 0
+      policyName: string
+      Product:
+        productId: 0
+        productName: string
+        productDescription: string
+      Preference:
+        id: string
+        details: string
+      Address:
+        addressId: 0
+        address1: string
+        street: string
+        city: string
+        state: string
+        country: string
+        zip: string
+        Contact:
+          mobile: 9999999999
+          emailId: string
+          phoneNumber: 0
+properties:
+  id:
+    type: number
+  claimId:
+    type: number
+  status:
+    type: string
+  PolicyDetails:
+    $ref: ../Policies/PolicyDetails.v1.yaml
+required:
+  - id
+  - claimId
+description: Its a ClaimResponse data model and it contains Claims information

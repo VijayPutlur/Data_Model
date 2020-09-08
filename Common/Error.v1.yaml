@@ -1,0 +1,19 @@
+title: Error.v1
+type: object
+properties:
+  id:
+    type: string
+  erroCode:
+    type: string
+  errorMessage:
+    type: string
+x-examples:
+  Error:
+    id: '1'
+    erroCode: Http failed
+    errorMessage: This is failed due to http connectivity
+  Error schema:
+    id: string
+    erroCode: string
+    errorMessage: string
+description: It contains error info
