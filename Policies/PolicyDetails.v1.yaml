@@ -1,0 +1,12 @@
+title: PolicyDetails
+type: object
+properties:
+  id:
+    type: integer
+  policyName:
+    type: string
+  date:
+    type: string
+    format: date
+required:
+  - id
