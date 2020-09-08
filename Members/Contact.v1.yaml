@@ -5,12 +5,10 @@ x-examples:
     mobile: 9999999999
     emailId: Messi@gmail.com
     phoneNumber: 9999999999
-    faxnum: '123456'
   Contact schema:
     mobile: 9999999999
     emailId: string
     phoneNumber: 0
-    faxnum: string
 description: Its Contact data model contains contact info.
 properties:
   mobile:
@@ -20,7 +18,5 @@ properties:
     type: string
   phoneNumber:
     type: number
-  faxnum:
-    type: string
 required:
   - mobile
