@@ -14,5 +14,7 @@ properties:
     example: 9999999999
   emailId:
     type: string
+  phoneNumber:
+    type: string
 required:
   - mobile
