@@ -57,5 +57,7 @@ properties:
     $ref: ../Members/Preference.v1.yaml
   Address:
     $ref: ../Members/Address.v1.yaml
+  Contact:
+    $ref: ../Members/Contact.v1.yaml
 required:
   - policyId
