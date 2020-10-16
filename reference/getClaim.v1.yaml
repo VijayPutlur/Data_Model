@@ -1,12 +1,11 @@
 openapi: 3.0.0
 info:
-  title: Demo
+  title: getClaim
   version: '1.0'
-  description: demo
 servers:
   - url: 'http://localhost:3000'
 paths:
-  /api:
+  /getClaims:
     get:
       summary: Your GET endpoint
       tags: []
@@ -16,13 +15,12 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ../Claims/ClaimRequest.v1.yaml
-      operationId: get-api
+                $ref: ./Policies.v1.yaml#/components/schemas/PolicyDetails
+      operationId: get-getClaims
       requestBody:
         content:
           application/json:
             schema:
-              type: object
-              properties: {}
+              $ref: ../Members/Address.v1.yaml
 components:
   schemas: {}

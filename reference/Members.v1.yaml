@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  title: Members
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths: {}
+components:
+  schemas:
+    Address:
+      title: Address.v1
+      type: object
+      description: Its Address data model contains Address info.
+      properties:
+        addressId:
+          type: integer
+        address1:
+          type: string
+        street:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        country:
+          type: string
+        zip:
+          type: string
+        Contact:
+          title: Contact
+          type: object
+          description: Its Contact data model contains contact info.
+          properties:
+            mobile:
+              type: number
+              example: 9999999999
+            emailId:
+              type: string
+          required:
+            - mobile
+      required:
+        - city
+        - state
+    Contact:
+      title: Contact
+      type: object
+      description: Its Contact data model contains contact info.
+      properties:
+        mobile:
+          type: number
+          example: 9999999999
+        emailId:
+          type: string
+      required:
+        - mobile
+    Preference:
+      title: Preference
+      type: object
+      properties:
+        id:
+          type: string
+        details:
+          type: string
+      description: Its Preference data model contains Preference info.

@@ -1,4 +1,13 @@
-title: PolicyDetails
+openapi: '3.0.0'
+info:
+  title: Test2
+  version: '1.0'
+servers:
+- url: http://localhost:3000
+paths: {}
+components:
+  schemas: 
+    title: PolicyDetails
 type: object
 x-examples:
   PolicyDetails:
@@ -85,3 +94,4 @@ properties:
     $ref: ../Members/Contact.v1.yaml
 required:
   - policyId
+
